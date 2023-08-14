@@ -1,3 +1,6 @@
+let currentElem;
+
+
 
 function notification(msg){
 
@@ -12,7 +15,7 @@ function notification(msg){
     document.body.appendChild(div);
 
     setTimeout(() => div.classList.add('active'), 1);
-    setTimeout(() => div.classList.remove('active'), 1000)
+    setTimeout(() => div.classList.remove('active'), 1500)
 
 }
 
@@ -45,16 +48,36 @@ function generateColorPalette(){
         let spanText = document.createElement('span');
             spanText.className = 'color-code';
             spanText.innerHTML = color;
+        
+        let input = document.createElement('input');
+        input.value = color;
+        input.name = 'color';
         a.appendChild(spanColor);
         a.appendChild(spanText);
+        a.appendChild(input);
         li.appendChild(a);
         palette.appendChild(li);
+        a.addEventListener('mouseover', (e) => {
+            currentElem = e.target.parentNode;
+        });
+
+        li.addEventListener('click', (e) =>{
+            e.target.parentNode.querySelector('input[name="color"]').select();
+            document.execCommand('copy');
+            notification('Color <b>' + input.value + '</b> copied to your clipboard');
+        })
+
     }
 }
 
 window.addEventListener('keypress', (e) => {
     if(e.code === 'Space'){
         generateColorPalette();
+    } else if (e.code === 'KeyC' && currentElem){
+        let targetInput = currentElem.querySelector('input[name="color"]');
+        targetInput.select();
+        document.execCommand('copy');
+        notification('Color <b>' + targetInput.value + '</b> copied to your clipboard');
     }
 })
 

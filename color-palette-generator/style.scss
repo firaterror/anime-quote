@@ -62,12 +62,23 @@ ul.palette{
         height: 329px;
         border-radius: 15px;
         margin: 0 15px;
-        
+        position: relative;
+        top: 0;
+        transition: 300ms all;
+        &:hover{
+            box-shadow: 0px 15px 42px -12px #A8B2C3;
+            top: -10px;
+        }
         a{
             display: flex;
             flex-direction: column;
             padding: 10px;
             text-align: center;
+            input{
+                position: absolute;
+                visibility: hidden;
+                opacity: 0;
+            }
             .color{
                 width: 100%;
                 background: var(--color);
