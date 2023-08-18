@@ -23,9 +23,15 @@ body .card-container ul {
   display: flex;
 }
 body ul li {
+  position: relative;
   border-radius: 30px;
   margin: 0 25px;
   background: #FFF;
+  transition: 300ms all;
+}
+body ul li:hover {
+  top: -10px;
+  box-shadow: 0px 34px 36px -14px #E9ECF9;
 }
 body ul li img {
   width: 323px;
