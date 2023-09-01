@@ -9,47 +9,131 @@
 </head>
 <body>
 
-<nav>
-    <div class="frame">
-        <a href="/"><img src="./assets/linkedin-header.svg"></a>
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass" style="color: #212936;"></i>
-            <input type="text" placeholder="Search...">
+    <nav>
+        <div class="frame">
+            <a href="/"><img src="./assets/linkedin-header.svg"></a>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass" style="color: #212936;"></i>
+                <input type="text" placeholder="Search...">
+            </div>
             <div class="menu">
                 <ul>
                     <li>
-                        <i class="fa-solid fa-house" style="color: #0b3784;"></i>
-                        Home
+                        <i class="fa-solid fa-house fa-xl" style="color: #000000;"></i>
+                        <span style="color: #000000; font-size: 14px; font-weight: 500; margin-left: 5px;">Home</span>
                     </li>
                     <li>
-                        <i class="fa-regular fa-user" style="color: #000000;"></i>
+                        <i class="fa-regular fa-user fa-lg" style="color: #000000;"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-briefcase" style="color: #000000;"></i>
+                        <i class="fa-solid fa-briefcase fa-lg" style="color: #000000;"></i>
                     </li>
                     <li>
-                        <i class="fa-regular fa-message" style="color: #000000;"></i>
+                        <i class="fa-regular fa-message fa-lg" style="color: #000000;"></i>
                     </li>
                     <li>
-                        <i class="fa-regular fa-bell" style="color: #000000;"></i>
+                        <i class="fa-regular fa-bell fa-lg" style="color: #000000;"></i>
                     </li>
                     <li>
-                        <i class="fa-solid fa-table-cells" style="color: #000000;"></i>
+                        <i class="fa-solid fa-table-cells fa-lg" style="color: #000000;"></i>
                     </li>
                 </ul>
             </div>
-
             <div class="user">
-                <div class="user-info">
+                <span class="user-info">
                     <h3>Cameron Williamson</h2>
                     <p>Online</p>
-                </div>
-                <img src="./assets/profilepicture.svg" alt="">
-                <i class="fa-solid fa-greater-than fa-rotate-90" style="color: #000000;"></i>
+                </span>
+                <img src="./assets/profilepicture.svg"alt="">
+                <img src="./assets/arrow.svg" style="margin-left: 6px;" alt="">
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile-widget">
+                    <div class="user">
+                        <img class="cover" src="./assets/profilewidget.svg" alt="">
+                        <div class="avatar"> 
+                            <img src="./assets/profilepicture2.svg" alt=""> 
+                        </div>
+                        <h3>Cameron Williamson</h3>
+                        <p>Business Analyst</p> 
+                    </div>
+                    <ul class="views">
+                        <li class="view-stats">
+                            Who viewed your profile
+                            <span class="value">90</span>
+                        </li>
+                        <li class="view-stats">
+                            Views of your post
+                            <span class="value">627</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="trends-widget">
+                    <div class="trend-container">
+                        <h2 class="newest">
+                            <span>NEWEST</span>
+                            <ul>
+                                <li># money</li>
+                                <li># economy</li>
+                                <li># markets</li>
+                                <li># futurism</li>
+                            </ul>
+                        </h2>
+                        <div class="group">
+                            <h2  class="group-title">
+                                GROUP
+                                <div class="dropdown">
+                                    <a href="#">
+                                        Active <img src="./assets/arrow-down.svg" alt="">
+                                    </a>
+                                </div>
+                            </h2>
+                            <ul>
+                                <li>
+                                    <img src="./assets/user-vector.svg" alt="">
+                                    Android Developers Group
+                                </li>
+                                <li>
+                                    <img src="./assets/user-vector.svg" alt="">
+                                    User Interface 
+                                </li>
+                                <li>
+                                    <img src="./assets/user-vector.svg" alt="">
+                                    User Experience
+                                </li>
+                                <li>
+                                    <img src="./assets/user-vector.svg" alt="">
+                                    Design Thinking
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-event-widget">
+                    <h2>
+                        <span>Add Event</span>
+                        <img src="./assets/plus-1.svg" alt="">
+                    </h2>
+                </div>
+                <div class="find-more-widget">
+                    <h2>Find More</h2>
+                </div>
+            </div>
+            <div class="content">
+                content
+            </div>
+            <div class="sidebar">
+                sidebar
+            </div>
+        </div>
+    </main>
+
+
 
 </body>
 </html>
