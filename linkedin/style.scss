@@ -226,10 +226,83 @@ main{
                 align-items: center;
                 width: 270px;
                 h2{
-                    color: #069;
+                    color: #069;  
                     font-size: 14px;
                     font-weight: 500;
                     padding: 20px 0;
+                }
+            }
+        }
+        .content{
+            .create-post-box{
+                width: 540px;
+                border-radius: 6px;
+                background: #FFF;
+                margin-bottom: 20px;
+                .create-placeholder{
+                    padding-left: 16px;
+                    span{
+                        border-bottom: 1px solid #EDF0F5;
+                        padding-top: 17px;
+                        margin-bottom: 17px;
+                        padding-bottom: 29px;
+                        color: #AAA;
+                        font-size: 14px;
+                        font-weight: 400;
+                        display: block;
+                    }
+                }
+                ul{
+                    display: flex;
+                    padding-left: 24px;
+                    padding-bottom: 15px;
+                    li{
+                        color: #17272F;
+                        font-size: 14px;
+                        font-weight: 400;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 63px;
+                        img{
+                            margin-right: 8px;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: -63px;
+                    }
+                }
+            }
+            .filter-post{
+                height: 52px;
+                background: rgba(222, 222, 222, 0.24);
+                border-radius: 6px;
+                margin-bottom: 14px;
+                .filter-container{
+                    padding: 13px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    h5{
+                        padding-left: 20px;
+                        color: #17272F;
+                        font-size: 14px;
+                        font-weight: 400;
+                        
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 16px;
+                            margin-right: 16px;
+                            color: #AAAAAA;
+                        }
+                        color: #17272F;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
                 }
             }
         }

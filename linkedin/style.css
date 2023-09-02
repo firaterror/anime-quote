@@ -224,4 +224,74 @@ main .container .sidebar .find-more-widget h2 {
   font-size: 14px;
   font-weight: 500;
   padding: 20px 0;
+}
+main .container .content .create-post-box {
+  width: 540px;
+  border-radius: 6px;
+  background: #FFF;
+  margin-bottom: 20px;
+}
+main .container .content .create-post-box .create-placeholder {
+  padding-left: 16px;
+}
+main .container .content .create-post-box .create-placeholder span {
+  border-bottom: 1px solid #EDF0F5;
+  padding-top: 17px;
+  margin-bottom: 17px;
+  padding-bottom: 29px;
+  color: #AAA;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+}
+main .container .content .create-post-box ul {
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 15px;
+}
+main .container .content .create-post-box ul li {
+  color: #17272F;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin-right: 63px;
+}
+main .container .content .create-post-box ul li img {
+  margin-right: 8px;
+}
+main .container .content .create-post-box ul li:last-child {
+  margin-right: -63px;
+}
+main .container .content .filter-post {
+  height: 52px;
+  background: rgba(222, 222, 222, 0.24);
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+main .container .content .filter-post .filter-container {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .content .filter-post .filter-container h5 {
+  padding-left: 20px;
+  color: #17272F;
+  font-size: 14px;
+  font-weight: 400;
+}
+main .container .content .filter-post .filter-container a {
+  display: flex;
+  align-items: center;
+  color: #17272F;
+  font-size: 14px;
+  font-weight: 500;
+}
+main .container .content .filter-post .filter-container a img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+  color: #AAAAAA;
 }/*# sourceMappingURL=style.css.map */
